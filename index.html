@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="teste.js"></script>
+    <script src="notification.js"></script>
+</head>
+<body>
+     <!-- Contêiner branco -->
+<div class="container">
+    <h3>Site que aparece teu nome!<br></h3>
+     <!-- Parágrafo para exibir o nome -->
+     <p id="mensagemNome"></p>
+    <br>
+    <!-- Botões lado a lado -->
+    <button onclick="confirmarEscolha()">Adicionar Nome</button>
+    <br>
+    <button onclick="exibirAlerta()">Grupo Do Whatsapp</button>
+    <br>
+    <button onclick="exibirNotificaçao()">Clique Aqui</button>
+    <script>
+        function exibirAlerta() {
+        alert("Você será redirecionado");
+        window.location = "https://chat.whatsapp.com/Jt1zULR3tC5AtZnxOvxM80";
+        }
+    </script>
+    <script type="text/javascript">
+        function exibirNotificaçao(){
+    if (window.Notification&&Notification.permission!=="denied"){
+        Notification.requestPermission(function(statu){
+        let n = new Notification('SaaS', {
+            body:'Você é SAAS'
+        })})
+    }
+}
+    </script>
+       <br>
+       <li>
+          <a href="/button.html">Botão</a>
+       </li>ml"
+</div>
+</body>
+</html>
