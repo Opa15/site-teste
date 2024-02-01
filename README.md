@@ -1,2 +1,1 @@
-# site-teste
-site teste, escribe your name to apears on the screen
+this is a test site, i just made because i was borred
